@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reflecta V1A</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Mara Prototype</h1>
+
+  <div class="panel">
+    <button id="createRoomBtn">Create Room</button>
+
+    <div>
+      <input id="roomInput" placeholder="Enter Room Code" />
+      <button id="joinRoomBtn">Join Room</button>
+      <button id="leaveRoomBtn">Leave Room</button>
+    </div>
+  </div>
+
+  <div class="status">
+    <h3>Status</h3>
+    <pre id="log"></pre>
+  </div>
+
+  <div id="chat">
+    <h3>Chat</h3>
+    <pre id="chatLog"></pre>
+
+    <input id="chatInput" placeholder="Type message..." />
+    <button id="sendChatBtn">Send</button>
+  </div>
+
+  <!-- Socket.IO client library -->
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
