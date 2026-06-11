@@ -12,7 +12,8 @@ function chat(msg) {
 
 // CONNECT TO SERVER
 // const socket = io(); this is from a LAN tunnel test
-const socket = io(window.location.origin);
+// const socket = io(window.location.origin); this is for the first Render deploy without the url
+const socket = io("https://reflecta-chfg.onrender.com"); // with the url
 
 // receive messages
 socket.on("receive_message", (data) => {
