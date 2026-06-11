@@ -11,7 +11,8 @@ function chat(msg) {
 }
 
 // CONNECT TO SERVER
-const socket = io();
+// const socket = io(); this is from a LAN tunnel test
+const socket = io(window.location.origin);
 
 // receive messages
 socket.on("receive_message", (data) => {
