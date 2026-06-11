@@ -11,7 +11,7 @@ function chat(msg) {
 }
 
 // CONNECT TO SERVER
-const socket = io("http://localhost:3000");
+const socket = io();
 
 // receive messages
 socket.on("receive_message", (data) => {
